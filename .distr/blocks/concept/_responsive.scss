@@ -1,0 +1,101 @@
+.concept {
+    @media (max-width: 1670px) {
+        &__block {
+            &-text {
+                max-width: 630px;
+            }
+            &-img {
+                top: 0;
+                right: -14%;
+                max-width: 600px;
+            }
+        }
+    }
+
+    @media (max-width: 1430px) {
+        &__block {
+            &-img {
+                right: -25px;
+                max-width: 500px;
+            }
+        }
+    }
+
+    @media (max-width: 1170px) {
+        &__block {
+            &-img {
+                right: 0;
+                max-width: 460px;
+            }
+        }
+    }
+
+    @media (max-width: 1060px) {
+        padding: 90px 0;
+        &__block {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            &-text {
+                max-width: 100%;
+            }
+            &-img {
+                position: relative;
+                top: unset;
+                right: unset;
+                max-width: 100%;
+            }
+        }
+        &__title {
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 40px;
+        }
+        &-block {
+            margin-bottom: 40px;
+            &__card {
+                max-width: 360px;
+                height: 80px;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 0 20px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        &-block {
+            margin-bottom: 40px;
+            &__card {
+                max-width: 310px;
+            }
+        }
+    }
+  
+    @media (max-width: 680px) {
+        padding: 50px 0;
+        .container {
+            max-width: 100%;
+            padding: 0;
+        }
+        &__block {
+            &-text {
+                padding: 0 15px;
+            }
+            &-img {
+                padding: 0;
+            }
+        }
+        &-block {
+            &__card {
+                max-width: 100%;
+            }
+        }
+    }
+}

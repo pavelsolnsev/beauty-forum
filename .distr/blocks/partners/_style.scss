@@ -1,0 +1,53 @@
+.partners {
+    padding: 50px 0 0;
+    &-title {
+        font-family: 'TenorSans';
+        font-size: 46px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        @media (max-width: 680px) {
+            font-size: 36px;
+            line-height: 40px;
+            padding-bottom: 20px;
+        }
+    }
+    &__noswipe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .partners__block-card {
+            max-width: 260px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+    &__block {
+        padding-bottom: 100px;
+        border-bottom: 1px solid #F68293;
+        display: none;
+        @media (max-width: 1200px) {
+            display: block;
+        }
+    }
+    &__button {
+        max-width: 320px;
+        width: 100%;
+        height: 57px;
+        border: 2px solid #E95264;
+        box-sizing: border-box;
+        border-radius: 42px;
+        font-size: 18px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px auto 20px;
+        a {
+            color: #E95264;
+        }
+    }
+}

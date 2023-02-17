@@ -1,0 +1,127 @@
+.price__page {
+
+    @media (max-width: 1060px) {
+        &__block {
+            &-card {
+                .card_block {
+                    &-price {
+                        font-size: 35px;
+                        line-height: 35px;
+                    }
+                    &-list {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        position: relative;
+        bottom: -100px;
+        z-index: 30;
+        background: url(../img/price__page/bg_ipad.png) no-repeat center bottom / 90%;
+        padding: 20px 0 250px;
+        .container {
+            max-width: 100%;
+            padding: 0;
+        }
+        &__top {
+            max-width: 680px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            &-title {
+                font-size: 55px;
+                line-height: 120%;
+                margin-bottom: 30px;
+            }
+        }
+        &__block {
+            max-width: 680px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+
+            flex-direction: column;
+            padding-bottom: 0;
+            border-bottom: none;
+            &-card {
+                max-width: 100%;
+                .card_block {
+                    display: flex;
+                    justify-content: space-between;
+                    &-block {
+                        max-width: 350px;
+                        width: 100%;
+                    }
+                    &-list {
+                        height: 195px;
+                    }
+                    &-btn {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 680px) {
+        padding: 10px 0 160px;
+        &__top {
+            max-width: 414px;
+            margin-bottom: 40px;        
+            &-title {
+                font-size: 22px;
+                line-height: 29px;
+            }
+        }
+        &__block {
+            max-width: 414px;
+
+            &-card {
+                max-width: 100%;
+                .card_block {
+                    flex-direction: column;
+                    margin-bottom: 30px;
+                    &-block {
+                        max-width: 100%;
+                    }
+                    &-list {
+                        height: auto;
+                        li {
+                            padding-left: 25px;
+                            &::before {
+                                left: 0;
+                            }
+                        }
+                    }
+                    &-btn {
+                        max-width: 170px;
+                        height: 55px;
+                        font-size: 18px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 414px) {
+        bottom: -150px;
+        background: url(../img/price__page/bg_ipad.png) no-repeat center bottom/170%;
+        padding: 0px 0 160px;
+        margin-top: -60px;
+        &__top {     
+            &-title {
+                br {
+                    display: block;
+                }
+            }
+        }
+    }
+}

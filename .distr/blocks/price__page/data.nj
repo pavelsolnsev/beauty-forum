@@ -1,0 +1,41 @@
+{% set products_data = [
+
+    {
+        name: 'Comfort',
+        product_id: '<?= $product_comfort ?>',
+        price: '<?= $comfort_price ?>',
+        text: '
+            <li>Аккредитация в зоне Comfort</li>
+            <li>Welcome Coffee</li>
+            <li>Запись форума</li>
+            <li>Подарки и скидки от партнеров</li>
+            <li>Подписка на платформу Synergy.online на 1 месяц</li>
+            '
+    },
+    {
+        name: 'VIP',
+        product_id: '<?= $product_vip ?>',
+        price: '<?= $vip_price ?>',
+        text: '
+            <li>Аккредитация в зоне VIP</li>
+            <li>Welcome Coffee</li>
+            <li>Запись форума</li>
+            <li>Подарки и скидки от партнеров</li>
+            <li>Подписка на платформу Synergy.online на 6 месяцев</li>
+            <li>Запись трансляции онлайн-сцены </li>
+            '
+    }
+]%}
+
+    {# {
+        name: 'Online',
+        product_id: '<?= $product_online ?>',
+        price: '<?= $online_price ?>',
+        text: '
+            <li>Онлайн-участие</li>
+            <li>Запись форума</li>
+            <li>Подарки и скидки от партнеров</li>
+            <li>Подписка на платформу Synergy.online на 1 месяц</li>
+            <li>Трансляция отдельной онлайн-сцены</li>
+            '
+    }, #}

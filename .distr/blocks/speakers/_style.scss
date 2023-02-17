@@ -1,0 +1,139 @@
+.speakers {
+    position: relative;
+    padding: 50px 0;
+    &-title {
+        font-family: 'TenorSans';
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__block {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        &-card {
+            max-width: 360px;
+            width: 100%;
+            height: 535px;
+            background: #FFECE3;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            &[data-more-hidden] {
+				position: absolute;
+				top: 9999px;
+				left: -9999px;
+				opacity: 0;
+			}
+            &__top {
+                min-height: 245px;
+                padding: 30px 20px;
+                .name {
+                    font-family: 'TenorSans';
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                }
+                .work {
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-bottom: 10px;
+                }
+                .link {
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: #E95264;
+                }
+            }
+            &__speaker {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+        &-button {
+            cursor: pointer;
+            max-width: 320px;
+            width: 100%;
+            height: 57px;
+            border: 2px solid #E95264;
+            box-sizing: border-box;
+            border-radius: 42px;
+            font-size: 18px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #E95264;
+            margin: 0 auto;
+        }
+    }
+}
+
+.swiper-nav {
+    position: relative;
+    margin: 20px 0 0;
+    display: flex;
+    align-items: center;
+    place-content: center;
+
+    .swiper-pagination {
+        display: flex;
+        align-items: center;
+        position: unset;
+        margin: 0 10px;
+    }
+      
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        margin: 0 8px 0;
+        background: transparent;
+        border: 1px solid #FFECE3;
+        border-radius: 50%;
+        opacity: 1;
+    }
+      
+    .swiper-pagination-bullet-active {
+        width: 24px;
+        height: 24px;
+        background: #FFECE3;
+    }
+      
+    .swiper-button-next, .swiper-button-prev {
+        width: 40px;
+        height: 35px;        
+        margin: 0;
+        top: unset;
+        left: unset;
+        right: unset;
+        position: relative;
+        border-radius: 100%;
+        outline: none;
+        transition: .2s;
+      
+        &:active {
+          top: 3px;
+          opacity: .3;
+        }
+      
+        &:after {
+          width: 100%;
+          height: 100%;
+          content: "";
+          display: block;
+          background-image: url(../img/common/arrow.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 60%;
+        }
+    }
+      
+    .swiper-button-prev {
+        &:after {
+          transform: rotate(180deg);
+        }
+    }
+}

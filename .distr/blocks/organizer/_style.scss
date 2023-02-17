@@ -1,0 +1,16 @@
+.organizer {
+    padding: 50px 0 100px;
+    &-title {
+        font-family: 'TenorSans';
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+    &-text {
+        max-width: 940px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+}

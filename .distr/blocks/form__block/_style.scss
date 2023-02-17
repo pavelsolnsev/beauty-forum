@@ -1,0 +1,52 @@
+.form__block {
+    position: relative;
+    background: #F06262;
+    padding: 100px 0;
+    margin-top: -10px;
+    @media (max-width: 1060px) {
+        padding: 50px 0;
+    }
+    @media (max-width: 680px) {
+        display: none;
+    }
+    &.white {
+        background: transparent;
+        .form{
+            &__title{
+                color: #000;
+            }
+            &__input{
+                border: 2px solid #F06262;
+                color: #F06262;
+                &::placeholder{
+                    color: #F06262;
+                }
+                &.error {
+                    border: 2px solid #fdd0d0;
+                }
+                &.valid {
+                    border: 2px solid #1cbd24;
+                }
+            }
+            &__btn{
+                background: #F06262;
+                color: #fff;
+            }
+            &__footer {
+                &-checkbox {
+                    border: 1px solid #000;
+                }
+                &-text {
+                    color: #000;
+                    a {
+                        color: #000;
+                    }
+                }
+                &-icon::before {
+                    border-right: 2px solid #000;
+                    border-bottom: 2px solid #000;
+                }
+            }
+        }
+    }
+}

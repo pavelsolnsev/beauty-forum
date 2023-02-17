@@ -1,0 +1,41 @@
+.price {
+    padding: 50px 0;
+    &__top {
+        position: relative;
+        top: -120px;
+        &-title {
+            display: flex;
+            align-items: center;
+            font-family: 'TenorSans';
+            font-size: 40px;
+            line-height: 40px;  
+            margin-bottom: 30px;
+            div {
+                margin-right: 20px;
+            }
+            span {
+                max-width: 220px;
+                width: 100%;
+
+                background: #FFECE3;
+                border-radius: 5px; 
+                padding: 5px 10px;
+
+                font-family: 'Museo Sans Cyrl';
+                font-size: 20px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #F06262;
+            }
+        }
+        &-text {
+            max-width: 555px;
+            width: 100%;
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+}

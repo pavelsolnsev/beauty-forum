@@ -1,0 +1,90 @@
+{% set partner = [
+    {
+        name: 'lago',
+        link: 'https://lagonaki.com/'
+    },
+        {
+        name: 'saco',
+        link: 'https://sacohair.ru/'
+    },
+        {
+        name: 'clincal',
+        link: 'https://is-clinical.com.ua/'
+    },
+        {
+        name: 'erborian',
+        link: 'https://www.erborian.ru/'
+    },
+        {
+        name: 'hydrafacial',
+        link: 'https://hydrafacial.ru/'
+    },
+        {
+        name: 'skazka',
+        link: 'https://parkskazka.com/'
+    },
+        {
+        name: 'smplygreen',
+        link: 'https://simplygreen.club/'
+    },
+        {
+        name: 'spaderman',
+        link: 'https://spadream.ru/'
+    }
+    ,
+        {
+        name: 'gess',
+        link: 'https://restup.ru/'
+    }
+
+    ,
+        {
+        name: 'shtrih',
+        link: 'https://restup.ru/'
+    }
+    ,
+        {
+        name: 'efremov',
+        link: 'https://efremov.gold/catalog/zoloto/'
+    }
+    ,
+        {
+        name: 'beat',
+        link: 'https://beautybash.ru/'
+    }
+    ,
+        {
+        name: 'def',
+        link: 'http://delfycosmetics.ru/'
+    }
+    ,
+        {
+        name: 'centre',
+        link: 'https://cetre.ru/'
+    }
+    ,
+        {
+        name: 'master_journal',
+        link: 'https://masterjournal.ru/'
+    }
+        ,
+        {
+        name: 'ushakova',
+        link: 'https://lenusheenstyle.ru/'
+    }
+        ,
+        {
+        name: 'simonyan',
+        link: ''
+    }
+        ,
+        {
+        name: 'eva',
+        link: 'https://eva.ru/'
+    }
+        ,
+        {
+        name: 'novotel',
+        link: 'https://all.accor.com/ssr/app/accor/rates/8225/index.ru.shtml?dateIn=2020-11-05&nights=1&compositions=1&stayplus=false'
+    }
+]%}

@@ -1,0 +1,99 @@
+.intro {
+    @media (max-width: 1060px) {
+        background: url(../img/intro/bg_ipad.jpg) no-repeat center / cover;
+        &.bottom {
+            padding: 50px 0;
+        }
+        &__logo {
+            margin-bottom: 55px;
+        }
+        &__block {
+            max-width: 480px;
+
+            &-type {
+                max-width: 315px;
+                font-size: 17px;
+                line-height: 28px;
+                padding: 5px 6px;
+            }
+            &-data {
+                height: 20px;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 10px;
+                .line {
+                    background: #fff;
+                    width: 1px;
+                    margin: 0 10px;
+                }
+            }
+            &-title {
+                font-size: 55px;
+                line-height: 100%;
+                margin-bottom: 15px;
+            }
+            &-subtitle {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+  
+    @media (max-width: 680px) {
+        background: url(../img/intro/bg_mobile.jpg) no-repeat center / cover;
+        padding: 70px 0 80px;
+        &__flex {
+            flex-direction: column;
+        }
+        &__logo {
+            max-width: 130px;
+            width: 100%;
+            margin: 0 auto 15px;
+        }
+        &__block {
+
+            &-type {
+                max-width: 210px;
+                font-size: 18px;
+                line-height: 28px;
+                padding: 5px 13px;
+                margin: 0 auto 10px;
+                text-align: center;
+                order: 3;
+            }
+            &-data {
+                flex-direction: column;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 40px;
+                text-align: center;
+                order: 4;
+                .line {
+                    display: none;
+                }
+            }
+            &-title {
+                font-size: 42px;
+                line-height: 90%;
+                text-align: center;
+                margin-bottom: 10px;
+                order: 1;
+            }
+            &-subtitle {
+                max-width: 240px;
+                margin: 0 auto 50px;
+                font-size: 26px;
+                line-height: 130%;
+                text-align: center;
+                order: 2;
+            }
+            &-link {
+                font-size: 22px;
+                line-height: 36px;
+                text-align: center;
+                order: 5;
+            }
+        }
+    }
+}
